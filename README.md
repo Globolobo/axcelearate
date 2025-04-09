@@ -57,7 +57,7 @@ npm run dev
 yarn dev
 ```
 
-This will start the Vite development server, typically at [http://localhost:5173](http://localhost:5173).
+This will start the Vite development server at [http://localhost:5173](http://localhost:5173).
 
 The application displays two variants of the contact search panel:
 
@@ -76,7 +76,7 @@ npm run storybook
 yarn storybook
 ```
 
-This will start the Storybook server, typically at [http://localhost:6006](http://localhost:6006).
+This will start the Storybook server at [http://localhost:6006](http://localhost:6006).
 
 ### Available Stories
 
@@ -94,14 +94,6 @@ To run all unit tests:
 npm test
 # or
 yarn test
-```
-
-To run tests in watch mode (recommended during development):
-
-```bash
-npm run test:watch
-# or
-yarn test:watch
 ```
 
 ## Project Structure
