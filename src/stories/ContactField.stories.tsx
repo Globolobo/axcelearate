@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { ContactField } from "./ContactField";
+import { ContactField } from "../components/ContactField";
 import { Box } from "@radix-ui/themes";
 
 const meta: Meta<typeof ContactField> = {

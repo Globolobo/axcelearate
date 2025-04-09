@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { InputField, InputFieldProps } from "./InputField";
-import magnifyingGlassIcon from "./assets/magnifying-glass.svg";
+import { InputField, InputFieldProps } from "../components/InputField";
+import magnifyingGlassIcon from "../components/assets/magnifying-glass.svg";
 
 const meta: Meta<typeof InputField> = {
   title: "Components/InputField",

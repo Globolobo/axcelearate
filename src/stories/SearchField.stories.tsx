@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { SearchField, SearchFieldProps } from "./SearchField";
+import { SearchField, SearchFieldProps } from "../components/SearchField";
 
 const meta: Meta<typeof SearchField> = {
   title: "Components/SearchField",

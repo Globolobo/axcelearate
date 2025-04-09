@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { SectionHeader, SectionHeaderProps } from "./SectionHeader";
+import { SectionHeader, SectionHeaderProps } from "../components/SectionHeader";
 import { Box, Text } from "@radix-ui/themes";
 
 const meta: Meta<typeof SectionHeader> = {
