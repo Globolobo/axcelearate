@@ -13,7 +13,6 @@ const dirname =
 
 // More info at: https://storybook.js.org/docs/writing-tests/test-addon
 export default defineWorkspace([
-  "vite.config.ts",
   {
     extends: "vite.config.ts",
     plugins: [
@@ -23,26 +22,28 @@ export default defineWorkspace([
     ],
     test: {
       name: "storybook",
+      environment: "node",
       browser: {
         enabled: true,
         headless: true,
         name: "chromium",
         provider: "playwright",
       },
+      exclude: [...configDefaults.exclude, "**/App.*", "**/app.test.*"],
       setupFiles: [".storybook/vitest.setup.ts"],
     },
   },
-  // {
-  //   extends: "vite.config.ts",
-  //   plugins: [react()],
-  //   test: {
-  //     name: "dom",
-  //     browser: {
-  //       enabled: true,
-  //       provider: "playwright",
-  //       instances: [{ browser: "chromium" }],
-  //     },
-  //     exclude: [...configDefaults.exclude, "stories/*", "*/storybook.test.ts"],
-  //   },
-  // },
+  {
+    extends: "vite.config.ts",
+    plugins: [react()],
+    test: {
+      name: "dom",
+      browser: {
+        enabled: true,
+        provider: "playwright",
+        instances: [{ browser: "chromium" }],
+      },
+      exclude: [...configDefaults.exclude, "stories/*", "*/storybook.test.ts"],
+    },
+  },
 ]);
