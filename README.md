@@ -1,54 +1,185 @@
-# React + TypeScript + Vite
+# Contact Search Panel Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application featuring a contact search panel with filtering capabilities, built with TypeScript, Vite, and Radix UI.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Running Storybook](#running-storybook)
+- [Running Tests](#running-tests)
+- [Project Structure](#project-structure)
+- [Component Documentation](#component-documentation)
+- [Troubleshooting](#troubleshooting)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Contact search panel with real-time filtering
+- Two variants: with and without email display
+- Expandable/collapsible sections for attended and absent contacts
+- Responsive design with Radix UI components
+- Comprehensive test coverage with Vitest
+- Storybook documentation for all components
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
+
+## Running the Application
+
+To start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This will start the Vite development server, typically at [http://localhost:5173](http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The application displays two variants of the contact search panel:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- **With Email Variant**: Shows contact names and email addresses
+- **Without Email Variant**: Shows only contact names
+
+## Running Storybook
+
+Storybook provides an isolated environment to develop and test UI components in isolation.
+
+To start Storybook:
+
+```bash
+npm run storybook
+# or
+yarn storybook
 ```
+
+This will start the Storybook server, typically at [http://localhost:6006](http://localhost:6006).
+
+### Available Stories
+
+- **ContactField**: Displays individual contact information
+- **SearchField**: Search input with magnifying glass icon
+- **Section**: Expandable section for grouping contacts
+- **SectionHeader**: Header component for sections with toggle functionality
+- **InputField**: Base input component with customizable variants
+
+## Running Tests
+
+To run all unit tests:
+
+```bash
+npm test
+# or
+yarn test
+```
+
+To run tests in watch mode (recommended during development):
+
+```bash
+npm run test:watch
+# or
+yarn test:watch
+```
+
+## Project Structure
+
+```
+src/
+├── assets/           # Static assets
+├── components/       # Reusable UI components
+│   ├── assets/       # Component-specific assets
+│   └── ...
+├── data/             # Data files and utilities
+├── stories/          # Storybook stories
+├── views/            # Page-level components
+├── App.tsx           # Main application component
+└── main.tsx          # Application entry point
+```
+
+## Component Documentation
+
+### ContactField
+
+Displays a contact with an avatar, name, and optional email.
+
+**Props:**
+
+- `name` (string, required): Contact's name
+- `email` (string, optional): Contact's email address
+- `showEmail` (boolean, default: false): Whether to display the email
+- `enabled` (boolean, default: false): Whether the contact is enabled
+- `imageSrc` (string, optional): Path to contact's avatar image
+- `imageClassName` (string, optional): Additional CSS class for the image
+
+### SearchField
+
+A search input with a magnifying glass icon.
+
+**Props:**
+
+- `placeholder` (string, default: "Search"): Placeholder text
+- `value` (string, required): Current input value
+- `onValueChange` (function, required): Callback when value changes
+
+### Section
+
+An expandable section for grouping contacts.
+
+**Props:**
+
+- `title` (string, required): Section title
+- `contacts` (array, required): Array of contact objects
+- `defaultExpanded` (boolean, default: false): Whether the section is expanded by default
+
+## Troubleshooting
+
+### Storybook Not Loading
+
+If Storybook fails to load:
+
+1. Clear the Storybook cache:
+   ```bash
+   npm run storybook:clean
+   # or
+   yarn storybook:clean
+   ```
+2. Restart the Storybook server
+
+### Build Issues
+
+If you encounter build issues:
+
+1. Clear the Vite cache:
+   ```bash
+   rm -rf node_modules/.vite
+   ```
+2. Reinstall dependencies:
+   ```bash
+   rm -rf node_modules
+   npm install
+   # or
+   yarn
+   ```
