@@ -148,18 +148,6 @@ An expandable section for grouping contacts.
 
 ## Troubleshooting
 
-### Storybook Not Loading
-
-If Storybook fails to load:
-
-1. Clear the Storybook cache:
-   ```bash
-   npm run storybook:clean
-   # or
-   yarn storybook:clean
-   ```
-2. Restart the Storybook server
-
 ### Build Issues
 
 If you encounter build issues:
