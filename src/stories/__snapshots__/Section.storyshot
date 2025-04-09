@@ -11,10 +11,10 @@
         <span
           class="rt-Text rt-r-size-2 rt-r-weight-medium section-header-text"
         >
-          Absent
+          Single Contact
         </span>
         <button
-          class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton section-header-toggle expanded"
+          class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton section-header-toggle "
           data-accent-color=""
         >
           <svg
@@ -32,92 +32,6 @@
             />
           </svg>
         </button>
-      </div>
-    </div>
-    <div
-      class="rt-Box section-content"
-      style="padding: 8px 0px;"
-    >
-      <div
-        class="contact-field-container   "
-      >
-        <div
-          class="contact-image-container "
-        >
-          <img
-            alt="Contact thumbnail"
-            class="contact-thumbnail"
-            src="/src/components/assets/default-contact-thumbnail.png"
-          />
-        </div>
-        <div
-          class="contact-details"
-        >
-          <div
-            class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
-          >
-            John Doe
-          </div>
-          <span
-            class="rt-Text contact-email"
-          >
-            john.doe@example.com
-          </span>
-        </div>
-      </div>
-      <div
-        class="contact-field-container   "
-      >
-        <div
-          class="contact-image-container "
-        >
-          <img
-            alt="Contact thumbnail"
-            class="contact-thumbnail"
-            src="/src/components/assets/default-contact-thumbnail.png"
-          />
-        </div>
-        <div
-          class="contact-details"
-        >
-          <div
-            class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
-          >
-            Jane Smith
-          </div>
-          <span
-            class="rt-Text contact-email"
-          >
-            jane.smith@example.com
-          </span>
-        </div>
-      </div>
-      <div
-        class="contact-field-container   "
-      >
-        <div
-          class="contact-image-container "
-        >
-          <img
-            alt="Contact thumbnail"
-            class="contact-thumbnail"
-            src="/src/components/assets/default-contact-thumbnail.png"
-          />
-        </div>
-        <div
-          class="contact-details"
-        >
-          <div
-            class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
-          >
-            Bob Johnson
-          </div>
-          <span
-            class="rt-Text contact-email"
-          >
-            bob.johnson@example.com
-          </span>
-        </div>
       </div>
     </div>
   </div>

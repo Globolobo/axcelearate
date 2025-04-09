@@ -1,32 +1,30 @@
 <div>
   <div
-    class="contact-field-container   "
+    class="rt-Box"
+    style="width: 400px;"
   >
     <div
-      class="contact-image-container "
-    >
-      <img
-        alt="Contact thumbnail"
-        class="contact-thumbnail"
-        src="/src/components/assets/default-contact-thumbnail.png"
-      />
-    </div>
-    <div
-      class="contact-details"
+      class="contact-field-container   "
     >
       <div
-        class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
+        class="contact-image-container "
       >
-        John Doe
+        <img
+          alt="Contact thumbnail"
+          class="contact-thumbnail"
+          src="/src/components/assets/default-contact-thumbnail.png"
+        />
       </div>
-      <span
-        class="rt-Text contact-email"
+      <div
+        class="contact-details"
       >
-        john.doe@example.com
-      </span>
-    </div>
-  </div>
-</div>rt-Text contact-email"
+        <div
+          class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
+        >
+          John Doe
+        </div>
+        <span
+          class="rt-Text contact-email"
         >
           john.doe@example.com
         </span>

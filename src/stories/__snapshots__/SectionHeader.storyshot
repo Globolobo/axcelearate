@@ -11,10 +11,10 @@
         <span
           class="rt-Text rt-r-size-2 rt-r-weight-medium section-header-text"
         >
-          Pre-expanded Section
+          Section Without Content
         </span>
         <button
-          class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton section-header-toggle expanded"
+          class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton section-header-toggle "
           data-accent-color=""
         >
           <svg
@@ -34,15 +34,9 @@
         </button>
       </div>
     </div>
-    <div
-      class="rt-Box"
-      style="padding: 16px; width: 400px; border: 1px solid rgb(228, 229, 232);"
-    >
-      <span
-        class="rt-Text"
-      >
-        This section starts expanded.
-      </span>
+  </div>
+</div>ton>
+      </div>
     </div>
   </div>
 </div>
