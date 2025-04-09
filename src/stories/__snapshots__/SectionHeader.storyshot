@@ -9,7 +9,7 @@
         class="rt-Box section-header"
       >
         <span
-          class="rt-Text rt-r-size-2 rt-r-weight-light section-header-text"
+          class="rt-Text rt-r-size-2 rt-r-weight-medium section-header-text"
         >
           Pre-expanded Section
         </span>

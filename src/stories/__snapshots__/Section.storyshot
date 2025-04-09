@@ -9,12 +9,12 @@
         class="rt-Box section-header"
       >
         <span
-          class="rt-Text rt-r-size-2 rt-r-weight-light section-header-text"
+          class="rt-Text rt-r-size-2 rt-r-weight-medium section-header-text"
         >
-          Single Contact
+          Absent
         </span>
         <button
-          class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton section-header-toggle "
+          class="rt-reset rt-BaseButton rt-r-size-2 rt-variant-ghost rt-IconButton section-header-toggle expanded"
           data-accent-color=""
         >
           <svg
@@ -34,8 +34,8 @@
         </button>
       </div>
     </div>
-  </div>
-</div>class="rt-Box section-content"
+    <div
+      class="rt-Box section-content"
       style="padding: 8px 0px;"
     >
       <div
@@ -47,14 +47,14 @@
           <img
             alt="Contact thumbnail"
             class="contact-thumbnail"
-            src="/src/stories/assets/default-contact-thumbnail.png"
+            src="/src/components/assets/default-contact-thumbnail.png"
           />
         </div>
         <div
           class="contact-details"
         >
           <div
-            class="rt-Text contact-name "
+            class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
           >
             John Doe
           </div>
@@ -74,14 +74,14 @@
           <img
             alt="Contact thumbnail"
             class="contact-thumbnail"
-            src="/src/stories/assets/default-contact-thumbnail.png"
+            src="/src/components/assets/default-contact-thumbnail.png"
           />
         </div>
         <div
           class="contact-details"
         >
           <div
-            class="rt-Text contact-name "
+            class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
           >
             Jane Smith
           </div>
@@ -101,14 +101,14 @@
           <img
             alt="Contact thumbnail"
             class="contact-thumbnail"
-            src="/src/stories/assets/default-contact-thumbnail.png"
+            src="/src/components/assets/default-contact-thumbnail.png"
           />
         </div>
         <div
           class="contact-details"
         >
           <div
-            class="rt-Text contact-name "
+            class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
           >
             Bob Johnson
           </div>

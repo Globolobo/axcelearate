@@ -8,25 +8,25 @@
       <img
         alt="Contact thumbnail"
         class="contact-thumbnail"
-        src="/src/stories/assets/default-contact-thumbnail.png"
+        src="/src/components/assets/default-contact-thumbnail.png"
       />
     </div>
     <div
       class="contact-details"
     >
       <div
-        class="rt-Text contact-name "
+        class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
       >
-        Alice Brown
+        John Doe
       </div>
+      <span
+        class="rt-Text contact-email"
+      >
+        john.doe@example.com
+      </span>
     </div>
   </div>
-</div>rt-Text contact-name "
-        >
-          John Doe
-        </div>
-        <span
-          class="rt-Text contact-email"
+</div>rt-Text contact-email"
         >
           john.doe@example.com
         </span>
@@ -41,14 +41,14 @@
         <img
           alt="Contact thumbnail"
           class="contact-thumbnail"
-          src="/src/stories/assets/default-contact-thumbnail.png"
+          src="/src/components/assets/default-contact-thumbnail.png"
         />
       </div>
       <div
         class="contact-details"
       >
         <div
-          class="rt-Text contact-name enabled-no-email"
+          class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name enabled-no-email"
         >
           Jane Smith
         </div>
@@ -63,14 +63,14 @@
         <img
           alt="Contact thumbnail"
           class="contact-thumbnail"
-          src="/src/stories/assets/default-contact-thumbnail.png"
+          src="/src/components/assets/default-contact-thumbnail.png"
         />
       </div>
       <div
         class="contact-details"
       >
         <div
-          class="rt-Text contact-name "
+          class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
         >
           Bob Johnson
         </div>
@@ -90,14 +90,14 @@
         <img
           alt="Contact thumbnail"
           class="contact-thumbnail"
-          src="/src/stories/assets/default-contact-thumbnail.png"
+          src="/src/components/assets/default-contact-thumbnail.png"
         />
       </div>
       <div
         class="contact-details"
       >
         <div
-          class="rt-Text contact-name "
+          class="rt-Text rt-r-weight-medium rt-r-ta-left contact-name "
         >
           Alice Brown
         </div>
