@@ -17,7 +17,7 @@ export const SectionHeader = ({
   return (
     <div className="section-header-container">
       <Box className="section-header">
-        <Text size="2" weight="light" className="section-header-text">
+        <Text size="2" weight="medium" className="section-header-text">
           {title}
         </Text>
         <IconButton

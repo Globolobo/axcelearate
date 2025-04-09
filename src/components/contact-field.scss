@@ -41,16 +41,23 @@
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
+  width: 100%;
+  line-height: 1.1;
 }
 
 .contact-name {
+  text-align: left;
+  line-height: 1.1;
+  color: #20374b;
+
   &.enabled-no-email {
     color: #6b46ef;
   }
 }
 
 .contact-email {
-  font-weight: 400;
   color: #5a6d80;
+  text-align: left;
+  line-height: 1.1;
 }

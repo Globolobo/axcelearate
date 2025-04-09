@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Box, Flex } from "@radix-ui/themes";
+import "./App.css";
+import { ContactSearchPanel } from "./views/ContactSearchPanel";
+import {
+  attendedContacts,
+  absentContacts,
+  createContactsWithoutEmails,
+} from "./data/contactData";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Create versions without email display
+  const attendedNoEmails = createContactsWithoutEmails(attendedContacts);
+  const absentNoEmails = createContactsWithoutEmails(absentContacts);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div style={{ background: "#444444", minHeight: "100vh", padding: "20px" }}>
+      <Flex gap="4">
+        <Box>
+          <h2 style={{ color: "white" }}>With Email Variant</h2>
+          <ContactSearchPanel
+            attendedContacts={attendedContacts}
+            absentContacts={absentContacts}
+          />
+        </Box>
+
+        <Box>
+          <h2 style={{ color: "white" }}>Without Email Variant</h2>
+          <ContactSearchPanel
+            attendedContacts={attendedNoEmails}
+            absentContacts={absentNoEmails}
+          />
+        </Box>
+      </Flex>
+    </div>
+  );
 }
 
-export default App
+export default App;

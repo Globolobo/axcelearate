@@ -49,10 +49,12 @@ export const ContactField = ({
       </div>
       <div className="contact-details">
         <Text
+          weight="medium"
           as="div"
           className={`contact-name ${
             enabled && !email ? "enabled-no-email" : ""
           }`}
+          align="left"
         >
           {name}
         </Text>

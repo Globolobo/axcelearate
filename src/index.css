@@ -70,7 +70,7 @@ button:focus-visible {
 .radix-themes {
   --default-font-family: "Roboto";
   --font-weight-light: 200;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
+  --font-weight-regular: 500;
+  --font-weight-medium: 600;
   --font-weight-bold: 800;
 }
