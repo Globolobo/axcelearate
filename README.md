@@ -36,8 +36,8 @@ A React application featuring a contact search panel with filtering capabilities
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/Globolobo/axcelearate
+   cd axcelearate
    ```
 
 2. Install dependencies:
