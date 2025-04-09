@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto";
   line-height: 1.5;
   font-weight: 400;
 
@@ -70,7 +70,7 @@ button:focus-visible {
 .radix-themes {
   --default-font-family: "Roboto";
   --font-weight-light: 200;
-	--font-weight-regular: 400;
-	--font-weight-medium: 500;
-	--font-weight-bold: 800;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
 }
