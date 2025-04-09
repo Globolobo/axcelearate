@@ -1,0 +1,107 @@
+<div>
+  <div
+    class="contact-field-container   "
+  >
+    <div
+      class="contact-image-container "
+    >
+      <img
+        alt="Contact thumbnail"
+        class="contact-thumbnail"
+        src="/src/stories/assets/default-contact-thumbnail.png"
+      />
+    </div>
+    <div
+      class="contact-details"
+    >
+      <div
+        class="rt-Text contact-name "
+      >
+        Alice Brown
+      </div>
+    </div>
+  </div>
+</div>rt-Text contact-name "
+        >
+          John Doe
+        </div>
+        <span
+          class="rt-Text contact-email"
+        >
+          john.doe@example.com
+        </span>
+      </div>
+    </div>
+    <div
+      class="contact-field-container   enabled-no-email"
+    >
+      <div
+        class="contact-image-container "
+      >
+        <img
+          alt="Contact thumbnail"
+          class="contact-thumbnail"
+          src="/src/stories/assets/default-contact-thumbnail.png"
+        />
+      </div>
+      <div
+        class="contact-details"
+      >
+        <div
+          class="rt-Text contact-name enabled-no-email"
+        >
+          Jane Smith
+        </div>
+      </div>
+    </div>
+    <div
+      class="contact-field-container   "
+    >
+      <div
+        class="contact-image-container "
+      >
+        <img
+          alt="Contact thumbnail"
+          class="contact-thumbnail"
+          src="/src/stories/assets/default-contact-thumbnail.png"
+        />
+      </div>
+      <div
+        class="contact-details"
+      >
+        <div
+          class="rt-Text contact-name "
+        >
+          Bob Johnson
+        </div>
+        <span
+          class="rt-Text contact-email"
+        >
+          bob.johnson@example.com
+        </span>
+      </div>
+    </div>
+    <div
+      class="contact-field-container   "
+    >
+      <div
+        class="contact-image-container "
+      >
+        <img
+          alt="Contact thumbnail"
+          class="contact-thumbnail"
+          src="/src/stories/assets/default-contact-thumbnail.png"
+        />
+      </div>
+      <div
+        class="contact-details"
+      >
+        <div
+          class="rt-Text contact-name "
+        >
+          Alice Brown
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
